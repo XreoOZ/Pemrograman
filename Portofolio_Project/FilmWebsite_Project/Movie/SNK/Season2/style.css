@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8d8c0; /* Darker beige background */
+    color: #3c2a1b; /* Darker brown text for warmth */
+}
+
+header {
+    background-color: #5c4a3a; /* Darker warm brown header */
+    color: #fff; /* White text for contrast */
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff; /* Keeping link color white for contrast */
+    text-decoration: none;
+}
+
+section {
+    margin: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #5c4a3a; /* Match h2 border with header color */
+    padding-bottom: 0.5rem;
+}
+
+.film {
+    margin-bottom: 1.5rem;
+}
+
+.film img {
+    max-width: 200px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background-color: #fff; /* White background for form */
+    padding: 1rem;
+    border-radius: 5px; /* Rounded corners for form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow for more depth */
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #aaa; /* Slightly darker border */
+    border-radius: 3px; /* Slightly rounded corners */
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #5c4a3a; /* Match button color with header */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px; /* Slightly rounded corners for button */
+}
+
+button:hover {
+    background-color: #4e3a30; /* Darker shade on hover for button */
+}

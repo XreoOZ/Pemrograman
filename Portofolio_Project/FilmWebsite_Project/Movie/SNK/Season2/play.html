@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Episode</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Watch Episode</h1>
+    </header>
+
+    <section>
+        <h2 id="episode-title">Episode Title</h2>
+        <video id="episode-video" controls>
+            <source id="video-source" src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <a href="index.html">Back to Episodes</a> <!-- Link back to the episode list -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Film Website</p>
+    </footer>
+
+    <script>
+        // Get the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const episode = urlParams.get('episode');
+        const title = urlParams.get('title');
+
+        // Set the video source and title
+        const videoSource = document.getElementById('video-source');
+        const episodeTitle = document.getElementById('episode-title');
+
+        if (episode) {
+            videoSource.src = `episode/${episode}`; // Adjust to point to the 'episode' folder
+            episodeTitle.textContent = title; // Set episode title
+            videoSource.parentElement.load(); // Load the video
+            videoSource.parentElement.play(); // Attempt to play the video
+        } else {
+            episodeTitle.textContent = "No episode selected"; // Handle case with no episode
+        }
+    </script>
+</body>
+</html>
